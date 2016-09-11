@@ -57,7 +57,7 @@ public final class QueryUtils {
                 JSONObject properties = currentEarthquake.getJSONObject("properties");
 
                 // Extract the value associated with the key "mag"
-                String magnitude = properties.getString("mag");
+                double magnitude = properties.getDouble("mag");
 
                 // Extract the value associated with the key "place"
                 String location = properties.getString("place");
@@ -74,7 +74,7 @@ public final class QueryUtils {
             }
 
         }
-        catch (JSONException e) {
+        catch(JSONException e) {
             // If any error id thrown when executing the above within the "try" code block,
             // catch the exception and print the error message to the logs
             Log.e("QueryUtils", "Problem parsing the earthquake JSON results", e);
