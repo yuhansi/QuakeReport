@@ -19,4 +19,11 @@
 
     <!-- Default text to show with the earthquake location if no specific location offset is given -->
     <string name="near_the">Near the</string>
+
+    <!-- Text to display in the ListView when there are no earthquakes -->
+    <string name="no_earthquakes">No earthquakes found.</string>
+
+    <!-- Error message when there is no internet connectivity -->
+    <string name="no_internet_connection">No Internet connection.</string>
+
 </resources>
